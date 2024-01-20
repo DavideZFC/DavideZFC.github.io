@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--
+ - File              : index.html
+ - Author            : Marco Mussi <marco.mussi@polimi.it>
+ - Last Modified Date: 17 Gen 2024
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Pagina personale - Marco Mussi">
+        <meta name="author" content="Marco Mussi">
+        <title>Marco Mussi</title>
+
+        <!--<link href="css/custom.css" rel="stylesheet">-->
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script>
+            var nav_height = 100px; // pixels
+            $(window).bind('hashchange', function(e){
+                if($(location.hash).hasClass('my-class')){
+                    scrollBy(0, nav_height);
+                }
+                return false;
+            });
+            $(document).ready(function(){
+                if($(location.hash).hasClass('my-class')){
+                    $('html,body').animate({
+                        scrollTop: $(location.hash).offset().top - nav_height - 10
+                    }, 10 );
+                }
+            });
+        </script>
+        <!-- a {color: rgb(69, 122, 251);} -->
+        <style>
+            h2 {color: rgb(69, 122, 251);}
+            h3 {color: rgb(69, 122, 251);}
+            h4 {color: rgb(69, 122, 251);}
+            h5 {color: rgb(69, 122, 251);}
+            a {color: rgb(69, 122, 251);}
+        </style>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- Fixed navbar <nav class="navbar navbar-expand-md fixed-top bg-dark bg-udc"> -->
+            <nav class="navbar navbar-expand-md fixed-top bg-light bg-udc">
+                <div class="container">
+                    <div class="col-3 mx-auto d-block">
+                        <a class="navbar-brand" href="https://marcomussi.github.io/"><b>Marco Mussi</b><!-- <img src="img/udc.png" width="200" height="30" alt="UDC"> --></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#publications">&nbsp; Pubblications &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">&nbsp; Education &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">&nbsp; Experience &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">&nbsp; Projects &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#academic">&nbsp; Academic Activities &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">&nbsp; Contacts &nbsp;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Begin page content -->
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-3 mx-auto d-block">
+                    <br><br>
+                    <div class="row mt-5 mx-auto d-block text-center">
+                        <img src="img/profile.jpg" class="img-fluid rounded-circle mb-3" alt="Profile picture">
+                        <h2>Marco Mussi</h2>
+                        <p class="lead"><b>Ph.D. Student</b><br>Politecnico di Milano</p>
+                    </div>
+                    <hr>
+                    <div class="row mx-auto d-block">
+                        <p><a href="https://orcid.org/0000-0001-8356-6744"><img src="img/orcid_4.png" alt="ORCID" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://orcid.org/0000-0001-8356-6744">ORCID</a></p>
+                        <p><a href="https://www.github.com/marcomussi"><img src="img/github.png" alt="GitHub" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://www.github.com/marcomussi">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/marcomussi95/"><img src="img/linkedin_4.png" alt="LinkedIn" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://www.linkedin.com/in/marcomussi95/">LinkedIn</a></p>
+                        <p><a href="https://scholar.google.com/citations?user=3gca-JUAAAAJ&hl=en"><img src="img/scholar_4.png" alt="Google Scholar" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://scholar.google.com/citations?user=3gca-JUAAAAJ&hl=en">Google Scholar</a></p>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <br><br>
+                    <section id="aboutme" class="mt-5" align="justify">
+                        <!-- <h2 class="display-5">About Me</h2><hr> -->
+                        <!--
+                        Marco Mussi is a Ph.D. student in Information Technology at the Department of Electronics, Information and Bioengineering of Politecnico di Milano. He received his Master's degree in Computer Science and Engineering at Politecnico di Milano in 2019. After a period as a research fellow in the AIRLab research team, he started the Ph.D. in late 2020 supervised by Prof. Marcello Restelli. His main research topics revolve around artificial intelligence and machine learning, focusing on online learning and reinforcement learning applied to pricing and advertising. He contributed to several industrial research projects funded by both private and public Italian companies.
+                        -->
+                        Since November 2020, I am a Ph.D. student in Information Technology at the Department of Electronics, Information and Bioengineering of Politecnico di Milano. I received my Master's degree in Computer Science and Engineering at Politecnico di Milano in 2019. After a period as a research fellow in the AIRLab research team, I started my Ph.D. supervised by Prof. Marcello Restelli. My main research topics revolve around artificial intelligence and machine learning, with a particular focus on online learning and reinforcement learning applied to pricing and advertising. My research activities are related to both fundamental and industrial research.
+                        <br><br> Download my <a href="https://marcomussi.github.io/CV_20240120.pdf">Curriculum Vitae</a>.
+                    </section>
+                    <section id="publications" class="mt-5">
+                        <h2 class="display-5">Publications</h2><hr>
+                        <h4>International Conferences</h4>
+                        <p>
+                            [1] Francesco Bacchiocchi*, Gianmarco Genalti*, Davide Maran*, <u>Marco Mussi</u>*, Marcello Restelli, Nicola Gatti and Alberto Maria Metelli. Autoregressive Bandits. Proceedings of the 27th International Conference on Artificial Intelligence and Statistics (AISTATS), 2024. (A Core Ranking - 546/1980, Acceptance rate 27.6%)
+                            <br>
+                            <a href="">[Link - To Appear]</a>
+                            <a href="https://doi.org/10.48550/arXiv.2212.06251">[arXiv]</a>
+                            <a href="papers/arb/paper.pdf">[Paper -  To Appear]</a>
+                            <a href="papers/arb/poster.pdf">[Poster - To Appear]</a>
+                            <a href="papers/arb/slides.pdf">[Slides - Preprint Version]</a>
+                        </p>
+                        <p>
+                            [2] <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. Dynamical Linear Bandits. Proceedings of the 40th International Conference on Machine Learning (ICML), 2023. (A* Core Ranking - 1827/6538, Acceptance rate 27.9%)
+                            <br>
+                            <a href="https://proceedings.mlr.press/v202/mussi23a.html">[Link]</a>
+                            <a href="https://doi.org/10.48550/arXiv.2211.08997">[arXiv]</a>
+                            <a href="papers/icmldlb2023/paper.pdf">[Paper]</a>
+                            <a href="papers/icmldlb2023/poster.pdf">[Poster]</a>
+                            <a href="papers/icmldlb2023/slides.pdf">[Slides]</a>
+                        </p>
+                        <p>
+                            [3] <u>Marco Mussi</u>*, Gianmarco Genalti*, Alessandro Nuara, Francesco Trovò, Nicola Gatti and Marcello Restelli. Dynamic Pricing with Volume Discounts in Online Settings. Proceedings of the Thirty-Fifth Conference on Innovative Applications of Artificial Intelligence (IAAI), 2023. AAAI. Innovative Application of AI Award.
+                            <br>
+                            <a href="https://doi.org/10.1609/aaai.v37i13.26845">[Link]</a>
+                            <a href="https://doi.org/10.48550/arXiv.2211.09612">[arXiv]</a>
+                            <a href="papers/iaai2023/paper.pdf">[Paper]</a>
+                            <a href="papers/iaai2023/poster.pdf">[Poster]</a>
+                            <a href="papers/iaai2023/slides.pdf">[Slides]</a>
+                            <a href="papers/iaai2023/award.pdf">[Award]</a>
+                        </p>
+                        <p>
+                            [4] <u>Marco Mussi</u>, Gianmarco Genalti, Francesco Trovò, Alessandro Nuara, Nicola Gatti and Marcello Restelli. Pricing the Long Tail by Explainable Product Aggregation and Monotonic Bandits. Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2022. (A* Core Ranking - Oral Presentation - 54/753, top 7%)
+                            <br>
+                            <a href="https://doi.org/10.1145/3534678.3539142">[Link]</a>
+                            <a href="papers/kdd2022/paper.pdf">[Paper]</a>
+                            <a href="papers/kdd2022/poster.pdf">[Poster]</a>
+                            <a href="papers/kdd2022/slides.pdf">[Slides]</a>
+                        </p>
+                        <h4>Journals</h4>
+                        <p>
+                            [5] <u>Marco Mussi</u>, Luigi Pellegrino, Oscar Francesco Pindaro, Marcello Restelli and Francesco Trovò. A Reinforcement Learning Controller Optimizing Costs and Battery State of Health in Smart Grids. Journal of Energy Storage, 82, 2024. (Q1 Scimago)
+                            <br>
+                            <a href="https://doi.org/10.1016/j.est.2024.110572">[Link]</a>
+                            <a href="papers/est2024/paper.pdf">[Paper]</a>
+                        </p>
+                        <p>
+                            [6] <u>Marco Mussi</u>, Davide Lombarda, Alberto Maria Metelli, Francesco Trovò and Marcello Restelli. ARLO: A Framework for Automated Reinforcement Learning. Expert Systems with Applications, 224, 2023. (Q1 Scimago)
+                            <br>
+                            <a href="https://doi.org/10.1016/j.eswa.2023.119883">[Link]</a>
+                            <a href="https://doi.org/10.48550/arXiv.2205.10416">[arXiv]</a>
+                            <a href="papers/eswaautorl2023/paper.pdf">[Paper]</a>
+                        </p>
+                        <p>
+                            [7] <u>Marco Mussi</u>, Luigi Pellegrino, Marcello Restelli and Francesco Trovò. An Online State of Health Estimation Method for Lithium-Ion Batteries based on Time Partitioning and Data-Driven Model Identification. Journal of Energy Storage, 55, 2022. (Q1 Scimago)
+                            <br>
+                            <a href="https://doi.org/10.1016/j.est.2022.105467">[Link]</a>
+                            <bf></bf><a href="papers/est2022/paper.pdf">[Paper]</a>
+                        </p>
+                        <p>
+                            [8] <u>Marco Mussi</u>, Luigi Pellegrino, Marcello Restelli and Francesco Trovò. A voltage dynamic-based state of charge estimation method for batteries storage systems. Journal of Energy Storage, 44, 2021. (Q1 Scimago)
+                            <br>
+                            <a href="https://doi.org/10.1016/j.est.2021.103309">[Link]</a>
+                            <a href="papers/est2021/paper.pdf">[Paper]</a>
+                        </p>
+                        <h4>Workshops</h4>
+                        <p>
+                            [9] Francesco Bacchiocchi*, Gianmarco Genalti*, Davide Maran*, <u>Marco Mussi</u>*, Marcello Restelli, Nicola Gatti and Alberto Maria Metelli. Online Learning in Autoregressive Dynamics. European Workshop on Reinforcement Learning (EWRL). 2023.
+                            <br>
+                            <a href="https://openreview.net/forum?id=YrHpQWpwsy">[Link]</a>
+                            <a href="papers/ewrlarb2023/paper.pdf">[Paper]</a>
+                            <a href="papers/ewrlarb2023/poster.pdf">[Poster]</a>
+                        </p>
+                        <p>
+                            [10] Alessandro Montenegro, <u>Marco Mussi</u>, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli. Stochastic Rising Bandits: A Best Arm Identification Approach. European Workshop on Reinforcement Learning (EWRL). 2023.
+                            <br>
+                            <a href="https://openreview.net/forum?id=Ctq0d9LEuT">[Link]</a>
+                            <a href="papers/ewrlbaisrb2023/paper.pdf">[Paper]</a>
+                            <a href="papers/ewrlbaisrb2023/poster.pdf">[Poster]</a>
+                        </p>
+                        <p>
+                            [11] Alessandro Montenegro, <u>Marco Mussi</u>, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli. A Best Arm Identification Approach for Stochastic Rising Bandits. Workshop on New Frontiers in Learning, Control, and Dynamical Systems at International Conference on Machine Learning (ICML). 2023.
+                            <br>
+                            <a href="https://openreview.net/forum?id=k6aftfkuad">[Link]</a>
+                            <a href="papers/icmlw2023/paper.pdf">[Paper]</a>
+                            <a href="papers/icmlw2023/poster.pdf">[Poster]</a>
+                        </p>
+                        <p>
+                            [12] Gianmarco Genalti, <u>Marco Mussi</u>, Alessandro Nuara and Nicola Gatti. Dynamic Pricing with Online Data Aggregation and Learning. European Workshop on Reinforcement Learning (EWRL). 2022. (Oral Presentation - 10/96)
+                            <br>
+                            <a href="https://ewrl.files.wordpress.com/2022/09/paper_dynamic_pricing_ewrl.pdf">[Link]</a>
+                            <a href="papers/ewrl2022/paper.pdf">[Paper]</a>
+                            <a href="papers/ewrl2022/poster.pdf">[Poster]</a>
+                            <a href="papers/ewrl2022/slides.pdf">[Slides]</a>
+                        </p>
+                        <p>
+                            [13] <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. Dynamical Linear Bandits for Long-Lasting Vanishing Rewards. Complex Feedback in Online Learning Workshop at International Conference on Machine Learning (ICML). 2022.
+                            <br>
+                            <a href="https://icml.cc/virtual/2022/18786">[Link]</a>
+                            <a href="papers/icml2022/paper.pdf">[Paper]</a>
+                            <a href="papers/icml2022/poster.pdf">[Poster]</a>
+                        </p>
+                        <h4>Under Review</h4>
+                        <p>
+                            [14] <u>Marco Mussi</u>, Alessandro Montenegro, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli. Best Arm Identification for Stochastic Rising Bandits. 2023. arXiv preprint arXiv:2302.07510.
+                            <br>
+                            <a href="https://doi.org/10.48550/arXiv.2302.07510">[arXiv]</a>
+                            <a href="papers/arxivbaisrb2023/paper.pdf">[Paper]</a>
+                        </p>
+                        <p>
+                            [15] <u>Marco Mussi</u> and Alberto Maria Metelli. Generalizing the Regret: an Analysis of Lower and Upper Bounds. 2023.
+                        </p>
+                        <!--
+                        <p>
+                            [16] Marco Mussi, Simone Drago, Alberto Maria Metelli and Marcello Restelli. Factored Rewards in Bandits and Intermediate Observations. 2023.
+                        </p>
+                        <p>
+                            [17] Marco Mussi, Simone Drago and Alberto Maria Metelli. Bernoulli Processes: Concentration and Regret. 2023.
+                        </p>
+                        <p>
+                            [18] Alessandro Montenegro, Matteo Papini, Marco Mussi and Alberto Maria Metelli. Action-based vs. Parameter-based Policy Gradients: the Quest for Optimal Deterministic Parametric Policies. 2023.
+                        </p>
+                        -->
+                    </section>
+                    <section id="education" class="mt-5">
+                        <h2 class="display-5">Education</h2><hr>
+                        <p>
+                            <b>Ph.D. in Information Technology - <i>Politecnico di Milano</i> </b> (Nov 2020 - now)<br>
+                            Ph.D. in Machine Learning. Focus on Pricing and Advertising Reinforcement Learning solutions.<br>
+                            <i>Supervisor:</i> Prof. Marcello Restelli <br>
+                            <i>Relevant coursework:</i> Reinforcement Learning, Online Learning and Monitoring
+                        </p>
+                        <p>
+                            <b>M.Sc. in Computer Science and Engineering - <i>Politecnico di Milano</i> </b> (Sep 2017 - Dec 2019)<br>
+                            <i>Main focus:</i> Artificial Intelligence and Machine Learning <br>
+                            <i>Scholarship:</i> Tuition waiver for high academic performance <br>
+                            <i>Relevant coursework:</i> Machine Learning, Artificial Intelligence, Game Theory, Autonomous Agents and Multi- agent Systems, Foundations of Operational Research, Software Engineering, Principles of Programming Languages, Data Bases II
+                        </p>
+                        <p>
+                            <b>B.Sc. in Computer Science and Engineering - <i>Politecnico di Milano</i> </b> (Sep 2014 - Jul 2017)<br>
+                            <i>Relevant coursework:</i> Software Engineering, Theoretical Computer Science, Communication Networks and Internet, Information Systems, Data Bases I, Computer Architecture and Operating Systems, Automatic Control, Calculus I, Calculus II, Linear Algebra and Geometry, Logics and Algebra, Statistics and Probability, Physics, Applied Physics
+                        </p>
+                        <p>
+                            <b>High School Diploma in Computer Science - <i>IIS Galileo Galilei Crema</i> </b> (Sep 2008 - Jul 2014)<br>
+                            <i>Main Focus:</i> C, Java, HTML, CSS, Javascript
+                        </p>
+                    </section>
+                    <section id="experience" class="mt-5">
+                        <h2 class="display-5">Experience</h2><hr>
+                        <p>
+                            <b>Applied Scientist - <i>ML cube</i> </b> (Nov 2020 - now)<br>
+                            <i>Goal:</i> develop algorithms for dynamic pricing and advertising optimization
+                        </p>
+                        <p>
+                            <b>Research Assistant - <i>Politecnico di Milano</i> </b> (Jan 2020 - Oct 2020)<br>
+                            <i>Supervisor:</i> Prof. Marcello Restelli
+                        </p>
+                    </section>
+                    <section id="industrialprojects" class="mt-5">
+                        <h2 class="display-5">Industrial Projects</h2><hr>
+                        <p>
+                            <b>AD cube Marketing Mix Model - <i>ML cube</i> </b> (Nov 2022 - now)<br>
+                            <i>Focus:</i> Budget optimization in advertising, considering advertising campaigns interactions
+                        </p>
+                        <p>
+                            <b>Data-driven Optimization Marketing Mix Models for Advertising - <i>WebRanking</i> </b> (Feb 2022 - Aug 2022)<br>
+                            <i>Focus:</i> Implementation of a MMM to solve the attribution problem in digital advertising in contexts with scarce and noisy data
+                        </p>
+                        <p>
+                            <b>Dynamic pricing for e-commerce - <i>Euroffice</i> </b> (Feb 2021 - May 2022)<br>
+                            <i>Focus:</i> Implementation of a dynamic pricing model for an e-commerce with over 20000 products
+                        </p>
+                        <p>
+                            <b>AD cube product release - <i>ML cube</i> </b> (Nov 2020 - Feb 2022)<br>
+                            <i>Focus:</i> Release of AD Cube, a product for advertising optimization in online campaigns
+                        </p>
+                        <p>
+                            <b>Last-mile delivery optimization - <i>PaxMile</i> </b> (May 2020 - Oct 2020)<br>
+                            <i>Focus:</i> Delivery allocation using Reinforcement Learning and bikers load estimation using Supervised Learning techniques
+                        </p>
+                        <p>
+                            <b>Reinforcement Learning in Smart-grids - <i>Ricerca Sistema Energetico</i> </b> (Feb 2020 - Oct 2022)<br>
+                            <i>Focus:</i> Exploit Reinforcement Learning solutions to preserve the battery State of Health in smart-grids, optimizing economic variables
+                        </p>
+                    </section>
+                    <section id="europeanprojects" class="mt-5">
+                        <h2 class="display-5">European Projects</h2><hr>
+                        <p>
+                            <b>AI4REALNET - <i> Fundamental Research Work Package </i> </b> (Oct 2023 - now)<br>
+                            <i>Focus:</i> The scope of AI4REALNET covers the perspective of AI-based solutions addressing critical systems (electricity, railway, and air traffic management) modeled by networks that can be simulated, and are traditionally operated by humans, and where AI systems complement and augment human abilities.
+                        </p>
+                    </section>
+                    <section id="academic" class="mt-5">
+                        <h2 class="display-5">Academic Activities</h2><hr>
+                        <h4>Teaching</h4>
+                        <p>
+                            <b>Tutor for ML/AI Master </b> <br>
+                            <i>Organized by Cefriel and Politecnico di Milano (October 2022 - July 2023)</i>
+                        </p>
+                        <h4>Organization of International Events</h4>
+                        <p>
+                            <b>European Workshop on Reinforcement Learning </b> <br>
+                            <i>Organizing Committee - Communication Chair (19/21 September 2022) </i>
+                        </p>
+                        <h4>Seminars</h4>
+                        <p>
+                            <b>An introduction to Reinforcement Learning in Real World</b> <br>
+                            DEIB Seminar - Politecnico di Milano <i>(3 September 2021)</i>
+                        </p>
+                        <p>
+                            <b>Un metodo data-driven per la stima dello stato di carica di batterie a ioni di litio</b> <br>
+                            RSE Academy Seminar - Ricerca Sistema Energetico <i>(23 October 2020)</i>
+                        </p>
+                        <h4>Partecipation to International Events</h4>
+                        <p>
+                            <b>European Workshop on Reinforcement Learning - EWRL 2023</b> <br>
+                            Brussels, Belgium. September 2023.
+                        </p>
+                        <p>
+                            <b>International Conference on Machine Learning - ICML 2023</b> <br>
+                            Honolulu, Hawaii, USA. July 2023.
+                        </p>
+                        <p>
+                            <b>Reinforcement Learning Summer School - RLSS 2023</b> <br>
+                            Barcelona, Spain. June 2023.
+                        </p>
+                        <p>
+                            <b>European Workshop on Reinforcement Learning - EWRL 2022</b> <br>
+                            Milan, Italy. September 2022.
+                        </p>
+                        <p>
+                            <b>ACM International Conference on Knowledge Discovery and Data Mining - KDD 2022</b> <br>
+                            Washington D.C., USA. August 2022.
+                        </p>
+                        <p>
+                            <b>International Conference on Machine Learning - ICML 2022</b> <br>
+                            Baltimore, Mariland, USA. July 2022.
+                        </p>
+                        <p>
+                            <b>DeepLearn Summer School - DeepLearn 2021</b> <br>
+                            Virtual. July 2021.
+                        </p>
+                        <h4>Master's Students Supervision</h4>
+                        <p>
+                            <b>Gianmarco Genalti - <i>"A Multi-Armed Bandit Approach to Dynamic Pricing"</i></b>. Co-supervision. Supervisor: Prof. Nicola Gatti (M.Sc. in Mathematical Engineering, Dec 2021)
+                        </p>
+                        <p>
+                            <b>Amedeo Cavallo - <i>"A Combinatorial Multi-Armed Bandit Approach to Online Advertising Budget Optimisation"</i></b>. Co-supervision. Supervisor: Prof. Marcello Restelli (M.Sc. in Computer Science and Engineering, Dec 2021)
+                        </p>
+                        <p>
+                            <b>Oscar Francesco Pindaro - <i>"Controlling Lithium-Ion Batteries Through Reinforcement Learning"</i></b>. Co-supervision. Supervisor: Prof. Marcello Restelli (M.Sc. in Computer Science and Engineering, Apr 2022)
+                        </p>
+                        <p>
+                            <b>Davide Lombarda - <i>"Towards Automated Reinforcement Learning"</i></b>. Co-supervision with Alberto Maria Metelli. Supervisor: Prof. Marcello Restelli (M.Sc. in Mathematical Engineering, Apr 2022)
+                        </p>
+                        <p>
+                            <b>Thomas Petrone - <i>"Hidden Markov Model for Single User Response Prediction in Digital Advertising Campaigns"</i></b>. Co-supervision. Supervisor: Prof. Marcello Restelli (M.Sc. in Mathematical Engineering, Jul 2022)
+                        </p>
+                        <p>
+                            <b>Alessandro Montenegro - <i>"Best Model Selection via Stochastic Rising Bandits"</i></b>. Co-supervision. Supervisor: Prof. Alberto Maria Metelli (M.Sc. in Computer Science and Engineering, May 2023)
+                        </p>
+                        <p>
+                            <b>Andrea d'Silva - <i>"Integrating Behavioral Cloning into a Reinforcement Learning pipeline"</i></b>. Co-supervision. Supervisor: Prof. Francesco Trovò (M.Sc. in Computer Science and Engineering, May 2023)
+                        </p>
+                        <p>
+                            <b>Francesco Gonzales - <i>"Stochastic Linear Bandit with Global-Local Structure"</i></b>. Co-supervision. Supervisor: Prof. Francesco Trovò (M.Sc. in Computer Science and Engineering, May 2023)
+                        </p>
+                        <p>
+                            <b>Vittorio Arianna - <i>"Multi-Armed Bandits for Joint Pricing and Advertising"</i></b>. Co-supervision. Supervisor: Prof. Nicola Gatti (M.Sc. in Computer Science and Engineering, Oct 2023)
+                        </p>
+                        <p>
+                            <b>Marco Bonalumi - <i>"An Online Learning Algorithm for Real-time Bidding"</i></b>. Co-supervision. Supervisor: Prof. Marcello Restelli (M.Sc. in Computer Science and Engineering, Dec 2023)
+                        </p>
+                        <p>
+                            <b>Alessandro Contù - <i>"Budget Optimization in Marketing Mix Models"</i></b>. Co-supervision. Supervisor: Prof. Marcello Restelli (M.Sc. in Computer Science and Engineering, Dec 2023)
+                        </p>
+                        <p>
+                            <b>Andrea Cerasani - <i>"An Online Dynamic Pricing Algorithm for Complementary Products"</i></b>. Co-supervision. Supervisor: Prof. Marcello Restelli (M.Sc. in Computer Science and Engineering, Dec 2023)
+                        </p>
+                        <p>
+                            <b>Valentina Abbattista</b>. Co-supervision. (M.Sc. in Computer Science and Engineering, in progress)
+                        </p>
+                        <p>
+                            <b>Federico Mansutti</b>. Co-supervision. (M.Sc. in Computer Science and Engineering, in progress)
+                        </p>
+                        <p>
+                            <b>Federico Corso</b>. Co-supervision. (M.Sc. in Automation and Control Engineering, in progress)
+                        </p>
+                        <p>
+                            <b>Davide Beretta</b>. Co-supervision. (M.Sc. in Computer Science and Engineering, in progress)
+                        </p>
+                        <h4>Review</h4>
+                        <p>
+                            <b>Reviewer for International Conferences and Workshops:</b>
+                            <br>
+                            Neural Information Processing Systems (NeurIPS)
+                            <br>
+                            International Conference on Machine Learning (ICML)
+                            <br>
+                            International Conference on Learning Representations (ICLR)
+                            <br>
+                            International Conference on Artificial Intelligence and Statistics (AISTATS)
+                            <br>
+                            International Conference on Automated Machine Learning (AutoML)
+                            <br>
+                            European Workshop on Reinforcement Learning (EWRL)
+                        </p>
+                        <p>
+                            <b>Reviewer for International Journals:</b>
+                            <br>
+                            Springer - Machine Learning (Q1)
+                            <br>
+                            IEEE - Transactions on Neural Networks and Learning Systems (Q1)
+                            <br>
+                            IEEE - Robotics and Automation Letters (Q1)
+                            <br>
+                            Elsevier - Engineering Applications of Artificial Intelligence (Q1)
+                        </p>
+                    </section>
+                    <section id="contacts" class="mt-5">
+                        <h2 class="display-5">Contacts</h2><hr>
+                        <p>
+                            <b>Email </b> <br> <i> marco DOT mussi AT polimi DOT it</i>
+                        </p>
+                        </p>
+                        <h4>Office</h4>
+                        <p>
+                            Office 19, First Floor of Building 21 <br>
+                            Dipartimento di Elettronica, Informazione e Bioingegneria <br>
+                            Politecnico di Milano <br>
+                            Via Ponzio 34/5, Milan, 20133, Italy
+                        </p>
+                    </section>
+                    <br>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted"> © 2023 - Marco Mussi </span>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bibtex.js"></script>
+    </body>
+</html>
